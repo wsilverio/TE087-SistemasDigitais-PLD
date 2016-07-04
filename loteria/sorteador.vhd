@@ -1,9 +1,9 @@
 ---------------------------------------------------------
 -- componente: sorteador
 -- descricao: esse componente tem a finalidade de escolher 
--- os numeros sorteados e tratá-los. Em seus ports de saida 
--- os números são entregues já separados em unidades e dezenas.
--- É entregado também um indice que informa em qual parte da 
+-- os numeros sorteados e trata-los. Em seus ports de saida 
+-- os numeros sao entregues ja separados em unidades e dezenas.
+-- E entregado tambem um indice que informa em qual parte da 
 -- maquina de estados se encontra.
 ---------------------------------------------------------
 	library IEEE;
@@ -22,12 +22,12 @@
 				index              : out integer range 0 to 7;
 				en 				   : out std_logic_vector(3 downto 0)
 				);   
-	end loterica;
+	end sorteador;
 	-------------------------------------------------------------
 	architecture Behavioral of sorteador is
 	
 		TYPE state IS (starting, first, second, third, fourth, fifth, sixth, ending);
-		--inicializações dos estados
+		--inicializacoes dos estados
 		signal pr_state   : state := starting; 
 		signal nx_state   : state := first;		
 		
@@ -39,7 +39,7 @@
 		signal selected_number:  integer range 1 to 60;
 		signal selected_number1: integer range 1 to 60;
 		--sinais para receber os numeros sorteados e fazer
-		--a verificação de repetido
+		--a verificacaoo de repetido
 		signal selected_number2: integer range 1 to 60;
 		signal selected_number3: integer range 1 to 60;
 		signal selected_number4: integer range 1 to 60;
@@ -150,7 +150,7 @@
 		process(debounced, rst)
 			variable v_rand: integer range 1 to 60; 
 		begin 
-			--verificação para reset
+			--verificacao para reset
 			if (rst ='1') then
 				pr_state <= starting;
 			elsif (debounced'event and debounced ='1') then 
@@ -304,7 +304,7 @@
 					deslocador <= -3;
 				end if;
 				
-				--para evitar ter que fazer divisão e assim economizar 
+				--para evitar ter que fazer divisao e assim economizar 
 				--hardware, o metodo para dividir unidade e dezena do
 				--numero sorteado foi o de contagem.
 				if(selected_number /= selected_number_old) then

@@ -1,0 +1,31 @@
+// clock
+NET clk LOC = "B8";
+// reset
+NET rst LOC = "D18";
+// botao
+NET button LOC = "B18";
+//NET "button" CLOCK_DEDICATED_ROUTE = FALSE;
+// display 7 seg
+NET seven_seg(0) LOC = "L18";
+NET seven_seg(1) LOC = "F18";
+NET seven_seg(2) LOC = "D17";
+NET seven_seg(3) LOC = "D16";
+NET seven_seg(4) LOC = "G14";
+NET seven_seg(5) LOC = "J17";
+NET seven_seg(6) LOC = "H14";
+NET en(0) LOC = "F17";
+NET en(1) LOC = "H17";
+NET en(2) LOC = "C18";
+NET en(3) LOC = "F15";
+NET point LOC = "C17";
+// VGA
+NET h_sync LOC = "T4";
+NET v_sync LOC = "U3";
+NET r(0) LOC = "R9";
+NET r(1) LOC = "T8";
+NET r(2) LOC = "R8";
+NET g(0) LOC = "N8";
+NET g(1) LOC = "P8";
+NET g(2) LOC = "P6";
+NET b(0) LOC = "U5";
+NET b(1) LOC = "U4";

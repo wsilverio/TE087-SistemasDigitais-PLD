@@ -1,0 +1,24 @@
+loteria.vhd
+├── pins.ucf
+├── pixel_gen.vhd
+│   └── font_rom.vhd
+├── sorteador.vhd
+│   ├── debounced_sw.vhd
+│   ├── display7seg.vhd
+│   ├── messages.vhd
+│   ├── millis.vhd
+│   └── random.vhd
+└── vga_controller.vhd
+
+
+loteria.vhd
++-- pins.ucf
++-- pixel_gen.vhd
+|   +-- font_rom.vhd
++-- sorteador.vhd
+|   +-- debounced_sw.vhd
+|   +-- display7seg.vhd
+|   +-- messages.vhd
+|   +-- millis.vhd
+|   +-- random.vhd
++-- vga_controller.vhd

@@ -1,0 +1,7 @@
+NET D LOC = "K17";
+NET C LOC = "K18";
+NET B LOC = "H18";
+NET A LOC = "G18";
+
+NET Z LOC = "J15";
+NET W LOC = "J14";

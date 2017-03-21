@@ -1,0 +1,9 @@
+NET binary(3) LOC = "K17";
+NET binary(2) LOC = "K18";
+NET binary(1) LOC = "H18";
+NET binary(0) LOC = "G18";
+
+NET gray(3) LOC = "K14";
+NET gray(2) LOC = "K15";
+NET gray(1) LOC = "J15";
+NET gray(0) LOC = "J14";

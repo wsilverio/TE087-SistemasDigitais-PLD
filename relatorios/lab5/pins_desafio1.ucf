@@ -1,0 +1,10 @@
+NET LEDs(29) LOC = "R4";
+NET LEDs(28) LOC = "F4";
+NET LEDs(27) LOC = "P15";
+NET LEDs(26) LOC = "E17";
+NET LEDs(25) LOC = "K14";
+NET LEDs(24) LOC = "K15";
+NET LEDs(23) LOC = "J15";
+NET LEDs(22) LOC = "J14";
+
+NET CLK LOC = "B8";
